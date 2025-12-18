@@ -8,15 +8,15 @@ function App() {
   return (
     <BrowserRouter>
       <nav>
-        <Link id="form-link" to="/">Form</Link>
-        <Link id="form-ref-link" to="/ref">Form Ref</Link>
-        <Link id="form-state-link" to="/state">Form State</Link>
+        <Link id="form-link" to="/form">Form</Link>
+        <Link id="form-ref-link" to="/form-ref">Form Ref</Link>
+        <Link id="form-state-link" to="/form-state">Form State</Link>
       </nav>
 
       <Switch>
-        <Route exact path="/" component={Form} />
-        <Route path="/ref" component={FormRef} />
-        <Route path="/state" component={FormState} />
+        <Route exact path="/form" component={Form} />
+        <Route path="/form-ref" component={FormRef} />
+        <Route path="/form-state" component={FormState} />
       </Switch>
     </BrowserRouter>
   );

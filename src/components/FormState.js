@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Card from "./Card";
 
 function FormState() {
@@ -26,7 +26,6 @@ function FormState() {
           id="full_name"
           value={form.full_name}
           onChange={handleChange}
-          placeholder="Full Name"
         /><br />
 
         <input
@@ -34,7 +33,6 @@ function FormState() {
           id="email"
           value={form.email}
           onChange={handleChange}
-          placeholder="Email"
         /><br />
 
         <input
@@ -42,7 +40,6 @@ function FormState() {
           id="password"
           value={form.password}
           onChange={handleChange}
-          placeholder="Password"
         /><br />
 
         <input
@@ -50,7 +47,6 @@ function FormState() {
           id="password_confirmation"
           value={form.password_confirmation}
           onChange={handleChange}
-          placeholder="Confirm Password"
         /><br />
 
         <button type="submit">Submit</button>
